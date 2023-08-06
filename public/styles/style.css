@@ -1,0 +1,112 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.content {
+  width: 70%;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.content-homepage {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background-image: url("../images/spotify-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.buscador {
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding: 100px;
+}
+
+.buscador h1 {
+  font-size: 3em;
+  color: black;
+}
+
+.btn-homepage {
+  color: white;
+  font-size: 1.3em;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: brown;
+  border: solid 1px brown;
+}
+
+.btn-homepage:hover {
+  color: brown;
+  font-size: 1.3em;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: white;
+  border: solid 1px brown;
+}
+
+.input-homepage {
+  padding: 10px;
+  width: 300px;
+  font-size: 1em;
+}
+
+
+.albums {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.album {
+  flex: 1 0 20%;
+  text-align: center;
+  background-color: rgb(83, 83, 83);
+  margin-bottom: 30px;
+  margin-right: 35px;
+  color: white;
+  font-size: 1.3em;
+}
+
+.album img {
+  max-height: 250px;
+  min-height: 90px;
+  width: 100%;
+}
+
+.btn-albums {
+  color: white;
+  font-size: 1em;
+  padding: 15px;
+  border-radius: 15px;
+  background-color: brown;
+  border: solid 1px brown;
+}
+
+.btn-albums:hover {
+  color: brown;
+  border-radius: 15px;
+  background-color: white;
+  border: solid 1px brown;
+}
+
+.album a {
+  text-decoration: none;
+  color: white;
+}
+
+.album a:hover {
+  color: brown;
+}

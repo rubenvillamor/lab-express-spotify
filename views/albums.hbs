@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="content">
+        <h1>Álbums</h1>
+        <h5><a href="../"> Volver al buscador</a></h5>
+        
+            <div class="albums">
+
+                {{#each this.albums.items}}
+                <div class="album">
+                    {{#if this.images.length}}
+                        <img src="{{this.images.[0].url}}" alt="{{this.name}}" width="300px">
+                    {{else}}
+                        <p>No hay imágenes disponibles para estr álbum.</p>
+                    {{/if}}
+                    <h3>{{this.name}}</h3>
+                    <p>Día lanzamiento: {{this.release_date}}</p>
+                    <p><a href="../tracks/{{this.id}}"><button class="btn-albums">Ver tracks</button></a></p>
+                </div>
+                {{/each}}
+            </div>
+    </div>
+</div>

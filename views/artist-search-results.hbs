@@ -1,0 +1,22 @@
+<div class="main">
+    <div class="content">
+        <h1>Resultados de búsqueda del artista: {{this.dataSearch}}</h1>
+        <h5><a href="./">< Volver al buscador</a></h5>
+
+            <div class="albums">
+                {{#each this.data.artists.items}}
+                    <div class="album">
+                    {{#if this.images.length}}
+                        <a href="./albums/{{this.id}}"><img src="{{this.images.[0].url}}" alt="{{this.name}}" width="300px"></a>
+                    {{else}}
+                        <p>No hay imágenes disponibles para este artista.</p>
+                    {{/if}}
+                    <p>{{this.name}}</p>
+                    <p><a href="./albums/{{this.id}}"><button class="btn-albums">Ver álbums</button></a></p>
+                    </div>
+                {{/each}}
+            </div>
+            
+    </div>
+    
+</div>
